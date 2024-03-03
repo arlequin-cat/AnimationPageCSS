@@ -244,12 +244,12 @@ footer div img
 
 .hidden
 {
-    display: none;
+    display: none !important;
 }
 
 .visible
 {
-    display: grid;
+    display: grid !important;
 }
 
 .modal
@@ -259,6 +259,16 @@ footer div img
     background: rgba(0, 0, 0, 0.5);
     position: absolute;
     z-index: 4;
+
+    display: grid;
+    place-items: center;
+}
+
+.modal-content
+{
+    background: white;
+    width: 50%;
+    height: 50%;
 }
 /*ANIMATIONS*/
 

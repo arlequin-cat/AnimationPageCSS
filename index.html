@@ -56,11 +56,24 @@
         </section>
         <!--Modal-->
         <section class="modal hidden">
-
+            <div class="modal-content">
+                <img class="modal-content-close" src="https://img.icons8.com/hatch/64/delete-sign.png" alt="delete-sign"/>
+            </div>
         </section>
     </div>
 </body>
 <script>
-    const button1 = document.querySelector('');
+    const modal = document.querySelector('.modal');
+    const button1 = document.querySelector('#button1');
+    const closebutton = document.querySelector('.modal-content-close');
+
+    button1.addEventListener('click', () => {
+        modal.classList.remove('hidden')
+        modal.classList.add('visible')})
+
+        closebutton.addEventListener('click', () => {
+            console.log('HERE')
+        modal.classList.add('hidden')
+        modal.classList.remove('visible')})
 </script>
 </html>
